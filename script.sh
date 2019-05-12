@@ -1,5 +1,4 @@
 #! /bin/bash
-sed 's/^M$//' data.csv
 sed 's/\//-/g' data.csv > data2.csv
 sed 's/-\([0-9][0-9]\);/-20\1;/' data2.csv > data3.csv
 sed 's/\([0-9][0-9]\)-\([0-9][0-9]\)-\([0-9][0-9][0-9][0-9]\);/\3-\2-\1;/' data3.csv > data4.csv
@@ -18,4 +17,4 @@ rm data6.csv
 rm data7.csv
 rm data8.csv
 rm data9.csv
-rm data.csv
+
